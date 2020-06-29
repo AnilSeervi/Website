@@ -303,7 +303,7 @@ header a:hover {
     );
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
     background-clip: text;
-    -webkit-background-clipp: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-size: 200%;
     -webkit-animation: gradient 1.5s linear infinite alternate;
