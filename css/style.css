@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #d3d3d3;
+  margin: 0;
+  background: #242424;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ff7600;
+}
+
+body::-webkit-scrollbar-track-piece {
+  background: #3b3b3b;
+}
+
+main {
+  height: calc(100vh - 11vh - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main span {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #d3d3d3;
+}
+
+a:hover {
+  color: #ff7600;
+  -webkit-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 11vh;
+}
+
+footer .social-links {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+footer .social-links .social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social-links .social-img {
+  width: 5vw;
+  height: 7vh;
+  margin: 0 3px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: -webkit-filter ease-in-out 0.5s;
+  transition: -webkit-filter ease-in-out 0.5s;
+  transition: filter ease-in-out 0.5s;
+  transition: filter ease-in-out 0.5s, -webkit-filter ease-in-out 0.5s;
+}
+
+footer .social-links .social-img.email {
+  margin: 0 0.5rem;
+}
+
+footer .social-links .social-img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+header {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header > a {
+  letter-spacing: 8px;
+  font-size: 30px;
+  margin-left: 40px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+header nav {
+  margin-left: auto;
+  display: none;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40vw;
+}
+
+header nav ul li {
+  letter-spacing: 3px;
+  list-style-type: none;
+}
+
+*::-moz-selection {
+  background: #ff7600;
+}
+
+*::selection {
+  background: #ff7600;
+}
+
+@media screen and (max-width: 700px) {
+  .main-grid {
+    height: 100vh;
+  }
+  main {
+    height: calc(100vh - 20vh - 40px);
+    margin: 20px 20px;
+    text-align: center;
+  }
+  header {
+    height: 10vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header > a {
+    margin: 0 auto;
+  }
+  header nav {
+    margin: 0 auto;
+  }
+  header ul {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer {
+    height: 10vh;
+  }
+  footer .social-link {
+    width: 50px;
+  }
+  footer .social-link .social-img {
+    width: 30px;
+  }
+  footer .social-link .social-img.email {
+    width: 25px;
+  }
+}
