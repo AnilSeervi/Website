@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,9 +14,9 @@ body {
   background: #242424;
   padding: 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body::-webkit-scrollbar {
@@ -46,11 +46,11 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 1.8rem;
   font-family: "Caveat", cursive;
 }
@@ -62,13 +62,46 @@ main p {
 
 main p:hover {
   cursor: none;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#c471ed), color-stop(#d16ba5), color-stop(#c777b9), color-stop(#ba83ca), color-stop(#aa8fd8), color-stop(#9a9ae1), color-stop(#8aa7ec), color-stop(#79b3f4), color-stop(#69bff8), color-stop(#52cffe), color-stop(#41dfff), color-stop(#46eefa), to(#5ffbf1));
-  background-image: linear-gradient(to right top, #c471ed, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#c471ed),
+    color-stop(#d16ba5),
+    color-stop(#c777b9),
+    color-stop(#ba83ca),
+    color-stop(#aa8fd8),
+    color-stop(#9a9ae1),
+    color-stop(#8aa7ec),
+    color-stop(#79b3f4),
+    color-stop(#69bff8),
+    color-stop(#52cffe),
+    color-stop(#41dfff),
+    color-stop(#46eefa),
+    to(#5ffbf1)
+  );
+  background-image: linear-gradient(
+    to right top,
+    #c471ed,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   background-size: 200%;
   -webkit-animation: gradient 1.5s linear infinite alternate;
-          animation: gradient 1.5s linear infinite alternate;
+  animation: gradient 1.5s linear infinite alternate;
 }
 
 main span {
@@ -86,14 +119,14 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 12vh;
   font-family: "Caveat", cursive;
   font-weight: 600;
@@ -105,13 +138,21 @@ footer > p {
 
 footer > p:hover {
   cursor: default;
-  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#12c2e9),
+    color-stop(#c471ed),
+    to(#f64f59)
+  );
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   background-size: 200%;
   -webkit-animation: gradient 1.5s linear infinite alternate;
-          animation: gradient 1.5s linear infinite alternate;
+  animation: gradient 1.5s linear infinite alternate;
 }
 
 footer .social-links {
@@ -121,8 +162,8 @@ footer .social-links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 footer .social-links .social-link {
@@ -130,11 +171,11 @@ footer .social-links .social-link {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 footer .social-links .social-link .fab,
@@ -148,25 +189,25 @@ footer .social-links .social-link .fas {
 footer .social-links .social-link .gmail:hover {
   color: #db4437;
   -webkit-animation: blink 1s infinite alternate linear;
-          animation: blink 1s infinite alternate linear;
+  animation: blink 1s infinite alternate linear;
 }
 
 footer .social-links .social-link .twitter:hover {
   color: #00acee;
   -webkit-animation: blink 1s infinite alternate linear;
-          animation: blink 1s infinite alternate linear;
+  animation: blink 1s infinite alternate linear;
 }
 
 footer .social-links .social-link .instagram:hover {
   color: #e1306c;
   -webkit-animation: blink 1s infinite alternate linear;
-          animation: blink 1s infinite alternate linear;
+  animation: blink 1s infinite alternate linear;
 }
 
 footer .social-links .social-link .github:hover {
   color: #c0c0c0;
   -webkit-animation: blink 1s infinite alternate linear;
-          animation: blink 1s infinite alternate linear;
+  animation: blink 1s infinite alternate linear;
 }
 
 header {
@@ -175,11 +216,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header > a {
@@ -190,13 +231,21 @@ header > a {
 }
 
 header a:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#12c2e9),
+    color-stop(#c471ed),
+    to(#f64f59)
+  );
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   background-size: 200%;
   -webkit-animation: gradient 1.5s linear infinite alternate;
-          animation: gradient 1.5s linear infinite alternate;
+  animation: gradient 1.5s linear infinite alternate;
 }
 
 *::-moz-selection {
@@ -214,47 +263,105 @@ header a:hover {
   main {
     margin: 0 20px;
     text-align: center;
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#c471ed), color-stop(#d16ba5), color-stop(#c777b9), color-stop(#ba83ca), color-stop(#aa8fd8), color-stop(#9a9ae1), color-stop(#8aa7ec), color-stop(#79b3f4), color-stop(#69bff8), color-stop(#52cffe), color-stop(#41dfff), color-stop(#46eefa), to(#5ffbf1));
-    background-image: linear-gradient(to right top, #c471ed, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      right top,
+      from(#c471ed),
+      color-stop(#d16ba5),
+      color-stop(#c777b9),
+      color-stop(#ba83ca),
+      color-stop(#aa8fd8),
+      color-stop(#9a9ae1),
+      color-stop(#8aa7ec),
+      color-stop(#79b3f4),
+      color-stop(#69bff8),
+      color-stop(#52cffe),
+      color-stop(#41dfff),
+      color-stop(#46eefa),
+      to(#5ffbf1)
+    );
+    background-image: linear-gradient(
+      to right top,
+      #c471ed,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1
+    );
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-size: 200%;
     -webkit-animation: gradient 1.5s linear infinite alternate;
-            animation: gradient 1.5s linear infinite alternate;
+    animation: gradient 1.5s linear infinite alternate;
   }
   main span {
-    background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#12c2e9),
+      color-stop(#c471ed),
+      to(#f64f59)
+    );
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-size: 200%;
     -webkit-animation: gradient 1.5s linear infinite alternate;
-            animation: gradient 1.5s linear infinite alternate;
+    animation: gradient 1.5s linear infinite alternate;
   }
   header {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   header > a {
     margin: 0 auto;
-    background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#12c2e9),
+      color-stop(#c471ed),
+      to(#f64f59)
+    );
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-size: 200%;
     -webkit-animation: gradient 1.5s linear infinite alternate;
-            animation: gradient 1.5s linear infinite alternate;
+    animation: gradient 1.5s linear infinite alternate;
   }
   footer > p {
     font-size: 1.2rem;
-    background: -webkit-gradient(linear, left top, right top, from(#db4437), color-stop(#36d1dc), color-stop(#5b86e5), to(#e1306c));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#db4437),
+      color-stop(#36d1dc),
+      color-stop(#5b86e5),
+      to(#e1306c)
+    );
     background: linear-gradient(to right, #db4437, #36d1dc, #5b86e5, #e1306c);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     background-size: 200%;
     -webkit-animation: gradient 1.5s infinite linear alternate;
-            animation: gradient 1.5s infinite linear alternate;
+    animation: gradient 1.5s infinite linear alternate;
   }
   footer .social-link {
     width: 50px;
@@ -262,22 +369,22 @@ header a:hover {
   footer .social-link .gmail {
     color: #db4437;
     -webkit-animation: blink 2s infinite alternate linear;
-            animation: blink 2s infinite alternate linear;
+    animation: blink 2s infinite alternate linear;
   }
   footer .social-link .twitter {
     color: #00acee;
     -webkit-animation: blink 2s infinite alternate linear;
-            animation: blink 2s infinite alternate linear;
+    animation: blink 2s infinite alternate linear;
   }
   footer .social-link .instagram {
     color: #e1306c;
     -webkit-animation: blink 2s infinite alternate linear;
-            animation: blink 2s infinite alternate linear;
+    animation: blink 2s infinite alternate linear;
   }
   footer .social-link .github {
     color: #c0c0c0;
     -webkit-animation: blink 2s infinite alternate linear;
-            animation: blink 2s infinite alternate linear;
+    animation: blink 2s infinite alternate linear;
   }
 }
 
